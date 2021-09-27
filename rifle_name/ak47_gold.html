@@ -11,23 +11,52 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <style>
-            table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
+
+              .button {
+              background-color: #4CAF50; /* Green */
+              border: none;
+              color: white;
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+            }
+
+            .button1 {
+              background-color: white; 
+              color: black; 
+              border: 2px solid #4CAF50;
+            }
+
+            .button1:hover {
+              background-color: #4CAF50;
+              color: white;
             }
 
             .myDiv {
             border: 5px;
-            background-color: rgb(255, 255, 255);   
+            background-color: #3f4142;   
             text-align: center;
+            color: #ffffff
             }
 
-            td, th {
-            border: 1px solid #dddddd;
+            table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            }
+
+            th, td {
             text-align: left;
             padding: 8px;
             }
+
+            tr:nth-child(even){background-color: #f2f2f2}
 
             tr:nth-child(even) {
             background-color: #dddddd;
@@ -74,7 +103,6 @@
             }
             body {
             /* background-image: url('https://images.hdqwalls.com/wallpapers/warface-2018-4k-ok.jpg'); */
-            background-color: #3f4142;
             background-repeat: no-repeat;
             background-attachment: fixed; 
             background-size: 100% 100%;
@@ -85,8 +113,8 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
+            background-color: #3f4142;
+            color: rgb(255, 255, 255);
             text-align: center;
           }
             
@@ -107,40 +135,40 @@
     <span class="badge badge-pill badge-info">Info</span>
     <span class="badge badge-pill badge-light">Light</span>
     <span class="badge badge-pill badge-dark">Dark</span> -->
-  </div>
+    <h1>АК-47 Gold</h1>
     <div class="container">
-        <img src="https://pc.warface.com/ms/data/newsx/da0ce95cb5a0d1a5266329c564170d70.jpg" alt="Special Operations" class="image" style="width:100%">
-        <div class="middle">
-          <!-- <div class="text"><H1><a href="https://ru.warface.com/wiki/index.php" target="_blank">Special Operations</a></H1></div> -->
-          <form action="./TEST.html" method="get" target="_blank">
-            <button type="submit" class="btn btn-outline-success"><h1>SPECIAL OPERATIONS</h1></button>
-         </form>
-        </div>
+    <div><a title="АК-47 Gold"><img alt="АК-47 Gold" src="https://wf.cdn.gmru.net/wiki/images/a/a2/Ar22_gold01.png"></a></div>
     </div>
-    <div class="container">
-        <img src="https://wfc.cdn.gmru.net/ms/45a651d5b41d8196f4f23a201af1150c.jpg" alt="PvE" class="image" style="width:100%">
-        <div class="middle">
-          <!-- <div class="text"><H1><a href="https://ru.warface.com/wiki/index.php" target="_blank">PvE Mission</a></H1></div> -->
-          <form action="./TEST.html" method="get" target="_blank">
-            <button type="submit" class="btn btn-outline-success"><h1>PVE MISSION</h1></button>
-         </form>
-        </div>
-    </div>
-    <div class="container">
-        <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/6139533/5a876d2b09d31b6bbe29412c4020ac60ea632504.jpg" alt="Guns" class="image" style="width:100%">
-        <div class="middle">
-          <!-- <div class="text"><H1><a href="https://ru.warface.com/wiki/index.php" target="_blank">PvE Mission</a></H1></div> -->
-          <form action="./class.html" method="get" target="_blank">
-            <button type="submit" class="btn btn-outline-success"><h1>GUNS</h1></button>
-         </form>
-        </div>
-    </div>
-  </div>
-</div>
+    <table>
+      <tr>
+        <th>Achievement</th>
+        <th>เงื่อนไข</th>
+      </tr>
+      <tr>
+        <td><img src="https://wf.cdn.gmru.net/wiki/images/1/16/Challenge_strip_weapon10_18.png" height="100px"></td>
+        <td>ฆ่า 5,000 ตัว</td>
+      </tr>
+      <tr>
+        <td><img src="https://wf.cdn.gmru.net/wiki/images/2/2f/Challenge_strip_weapon25_18.png" height="100px"></td>
+        <td>ฆ่า 10,000 ตัว</td>
+      </tr>
+      <tr>
+        <td><img src="https://wf.cdn.gmru.net/wiki/images/5/58/Challenge_strip_113.png" height="100px"></td>
+        <td>ฆ่า 999 ตัว</td>
+      </tr>
+    </table>
+    <button class="button1" onclick="goBack()">Back</button>
+    <br>
+    <br>
 <div class="footer">
   <a>จัดทำโดยแคลน DKKN-TH</a>
   <a>ข้อมูลแปลจาก</a> <a href="https://ru.warface.com/wiki/index.php"> ru.warface.com
 </div>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 </body>
 </html>
 
